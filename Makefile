@@ -1,4 +1,7 @@
-.PHONY: install-crystal
+new:
+	mkdir -p $(day)
+	cd $(day)
+	touch $(day)/main.cr
 
-install-crystal:
-	curl -fsSL https://crystal-lang.org/install.sh | sudo bash
+run:
+	crystal run $(day)/main.cr
