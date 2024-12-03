@@ -1,6 +1,8 @@
+year := 2024
+
 new:
-	mkdir -p $(day)
-	touch $(day)/main.cr
+	mkdir -p $(year)/$(day)
+	touch $(year)/$(day)/main.cr
 
 run:
-	crystal run $(day)/main.cr
+	crystal run $(year)/$(day)/main.cr
