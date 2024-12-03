@@ -1,8 +1,7 @@
 year := 2024
 
 new:
-	mkdir -p $(year)/$(day)
-	touch $(year)/$(day)/main.cr
+	cp -r $(year)/template $(year)/$(day)
 
 run:
 	crystal run $(year)/$(day)/main.cr

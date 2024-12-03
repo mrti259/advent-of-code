@@ -1,4 +1,4 @@
-File.open "./2024/1/input.txt", do |file|
+File.open __DIR__ + "/input.txt", do |file|
     list0 = Array(Int32).new
     list1 = Array(Int32).new
     file.each_line do |line|
